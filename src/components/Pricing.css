@@ -1,0 +1,51 @@
+h1 {
+    padding-top: 20px;
+    color: black;
+}
+
+.main {
+    width: 90%; /* Use a larger percentage for mobile */
+    padding: 20px; /* Reduced padding for smaller screens */
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap in smaller viewports */
+    justify-content: space-between;
+    margin: auto;
+}
+
+.para {
+    padding: 20px;
+    font-size: 1rem; /* Adjust font size for mobile */
+}
+
+.button {
+    background-color: rgb(108, 218, 108);
+    border-radius: 30px;
+    padding: 4px 20px; /* Adjust padding for smaller buttons */
+}
+
+.button:hover {
+    background-color: rgb(108, 218, 108);
+}
+
+.card {
+    padding: 20px;
+    max-height: max-content;
+    width: 100%; /* Full width on mobile */
+    max-width: 400px; /* Limit maximum width for larger screens */
+    text-align: center;
+    margin: 10px; /* Add margin for spacing between cards */
+    border: 1px solid #e0e0e0; /* Optional: Add a border to the card */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+    .main {
+        width: 70%; /* Use original width on larger screens */
+    }
+
+    .card {
+        width: 45%; /* Use smaller width on larger screens */
+    }
+}

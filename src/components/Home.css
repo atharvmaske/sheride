@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #555758, #b8c6d6); /* Gradient background */
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Section Styles */
+.section {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px; /* Reduced margin for spacing */
+    padding: 50px; /* Increased padding for height */
+    min-height: 400px; /* Set a minimum height for sections */
+    background-color: white; /* White background for sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateY(50px); /* Start position for animation */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation effect */
+}
+
+.section.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up */
+}
+.custom-button {
+    color: white; /* Set text color to white */
+    border-color: #ffffff; /* Keep the outline color */
+}
+
+.custom-button:hover {
+    background-color: #28a745; /* Optional: Change background on hover */
+    color: white; /* Keep text color white on hover */
+}
+
+
+/* Text Container */
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font for main title */
+    margin-bottom: 15px; /* Space below the main title */
+}
+
+h2 {
+    font-size: 2rem; /* Slightly larger font for sub-titles */
+    color: #007bff; /* Match the primary color */
+    margin: 10px 0; /* Space above and below */
+}
+
+h3 {
+    font-size: 1.5rem; /* Size for third-level headings */
+    color: #333; /* Darker color for contrast */
+    margin: 10px 0; /* Space above and below */
+}
+
+/* Section Image */
+.section-image {
+    flex: 1;
+    width: 95px;
+    height: auto;
+    margin: 20px; /* Spacing around images */
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth scale on hover */
+}
+
+.section-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Lists */
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    background: #f1f1f1; /* Light background for list items */
+    margin: 5px 0; /* Space between list items */
+    padding: 10px; /* Padding inside list items */
+    border-radius: 5px; /* Rounded corners for list items */
+}
+
+/* Buttons */
+button {
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
+
+/* Download Apps Section */
+button.me-2 {
+    margin-right: 10px; /* Space between buttons */
+}
+
+/* Footer or Last Section */
+.section:last-child {
+    text-align: center; /* Center text in the last section */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; /* Stack text and images on smaller screens */
+        text-align: center; /* Center text for mobile */
+    }
+    
+    .section-image {
+        margin: 0; /* Remove margin for mobile images */
+        border-radius: 10px; /* Rounded corners */
+    }
+}
